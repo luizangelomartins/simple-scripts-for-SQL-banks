@@ -1,0 +1,24 @@
+
+-- Banco de dados simples feito focado nos remédios de uma farmacia.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS remedios;
+CREATE DATABASE remedios;
+USE remedios;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE remedios_disponiveis (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	remedio VARCHAR (50),
+	fabricante VARCHAR (50)
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO remedios_disponiveis VALUES (0, 'Dorflex', 'A Sanofi');
+INSERT INTO remedios_disponiveis VALUES (0, 'Neosaldina', 'Laboratório Takeda');
+INSERT INTO remedios_disponiveis VALUES (0, 'Addera D3', 'Hypera');
+INSERT INTO remedios_disponiveis VALUES (0, 'Buscopan', 'Farmacêutica Boehringer');
+SELECT * FROM remedios_disponiveis;
+
+
