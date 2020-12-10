@@ -1,0 +1,28 @@
+
+-- Banco de dados simples feito focado nos consoles mais consumidos pelo público.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS consoles;
+CREATE DATABASE consoles;
+USE consoles;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE consoles_consumidos (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	console VARCHAR (50),
+	lançamento INT (4),
+	valor VARCHAR (50)
+	
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO consoles_consumidos VALUES (0, 'PlayStation', 1994, '900.00+');
+INSERT INTO consoles_consumidos VALUES (0, 'PlayStation 2', 2000, '1000.00+');
+INSERT INTO consoles_consumidos VALUES (0, 'PlayStation 3', 2006, '1300.00+');
+INSERT INTO consoles_consumidos VALUES (0, 'PlayStation 4', 2013, '3100.00+');
+INSERT INTO consoles_consumidos VALUES (0, 'Xbox 360', 2005, '500.00+');
+INSERT INTO consoles_consumidos VALUES (0, 'Xbox One', 2013, '1150.00+');
+SELECT * FROM consoles_consumidos;
+
+
