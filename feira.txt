@@ -1,0 +1,27 @@
+
+-- Banco de dados simples feito focado nas frutas de uma feira.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS feira;
+CREATE DATABASE feira;
+USE feira;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE frutas_disponiveis (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	fruta VARCHAR (50),
+	valor_medio_em_KG DOUBLE
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO frutas_disponiveis VALUES (0, 'Maçã Gala', 6.11);
+INSERT INTO frutas_disponiveis VALUES (0, 'Laranja Pera', 1.75);
+INSERT INTO frutas_disponiveis VALUES (0, 'Banana Nanica', 3.25);
+INSERT INTO frutas_disponiveis VALUES (0, 'Mamão Formosa', 3.05);
+INSERT INTO frutas_disponiveis VALUES (0, 'Uva Niágara', 7.01);
+INSERT INTO frutas_disponiveis VALUES (0, 'Tomate Italiano', 33.33);
+INSERT INTO frutas_disponiveis VALUES (0, 'Limão Tahiti', 2.25);
+SELECT * FROM frutas_disponiveis;
+
+
