@@ -1,0 +1,31 @@
+
+-- Banco de dados simples feito focado em alunos de uma escola.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS alunos;
+CREATE DATABASE alunos;
+USE alunos;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE alunos_da_escola (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	aluno VARCHAR (50),
+	escola VARCHAR (50),
+	idade INT (2),
+	nascimento INT(4)
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO alunos_da_escola VALUES (0, 'Heloísa', 'Municipal', 12, 2005);
+INSERT INTO alunos_da_escola VALUES (0, 'Alice', 'Municipal', 13, 2008);
+INSERT INTO alunos_da_escola VALUES (0, 'Laura', 'Municipal', 12, 2010);
+INSERT INTO alunos_da_escola VALUES (0, 'Manuela', 'Municipal', 15, 2007);
+INSERT INTO alunos_da_escola VALUES (0, 'Mahina', 'Municipal', 17, 2015);
+INSERT INTO alunos_da_escola VALUES (0, 'Hinata', 'Municipal', 13, 2009);
+INSERT INTO alunos_da_escola VALUES (0, 'Ayumi', 'Municipal', 15, 2013);
+INSERT INTO alunos_da_escola VALUES (0, 'Sayuri', 'Municipal', 16, 2007);
+INSERT INTO alunos_da_escola VALUES (0, 'Naomi', 'Municipal', 15, 2007);
+SELECT * FROM alunos_da_escola;
+
+
