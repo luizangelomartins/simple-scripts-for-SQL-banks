@@ -1,0 +1,26 @@
+
+-- Banco de dados simples feito focado em um estacionamento de veículos.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS estacionamento_de_carros;
+CREATE DATABASE estacionamento_de_carros;
+USE estacionamento_de_carros;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE carros_disponiveis (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	marca VARCHAR (50),
+	carro VARCHAR (50),
+	ano INT(4)
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO carros_disponiveis VALUES (0, 'Volkswagen', 'Jetta', 2012);
+INSERT INTO carros_disponiveis VALUES (0, 'Toyota', 'Corolla', 2020);
+INSERT INTO carros_disponiveis VALUES (0, 'Nissan', 'Nissan Sentra', 2014);
+INSERT INTO carros_disponiveis VALUES (0, 'Chevrolet', 'Camaro', 2011);
+INSERT INTO carros_disponiveis VALUES (0, 'Hyundai', 'Hyundai Azera', 2009);
+SELECT * FROM carros_disponiveis;
+
+
