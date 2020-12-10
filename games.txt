@@ -1,0 +1,26 @@
+
+-- Banco de dados simples feito focado em games mais jogados e/ou vendidos:
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS games;
+CREATE DATABASE games;
+USE games;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE games_table (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	jogo VARCHAR (50),
+	lançamento INT (4),
+	valor VARCHAR (10)
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO games_table VALUES (0, 'Minecraft', 2009, '121.75+');
+INSERT INTO games_table VALUES (0, 'Tetris', 1984, 'FREE');
+INSERT INTO games_table VALUES (0, 'Grand Theft Auto V', 2013, '149.00+');
+INSERT INTO games_table VALUES (0, 'God of War 4', 2018, '59.00+');
+INSERT INTO games_table VALUES (0, 'Halo 5: Guardians', 2015, '89.00+');
+SELECT * FROM games_table;
+
+
