@@ -1,0 +1,25 @@
+
+-- Banco de dados simples feito focado nos legumes de um mercadinho.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS mercadinho;
+CREATE DATABASE mercadinho;
+USE mercadinho;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE legumes_disponiveis (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	legume VARCHAR (30),
+	valor DOUBLE
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO legumes_disponiveis VALUES (0, 'Alface crespa', 4.90);
+INSERT INTO legumes_disponiveis VALUES (0, 'Batata', 3.39);
+INSERT INTO legumes_disponiveis VALUES (0, 'Cenoura', 1.75);
+INSERT INTO legumes_disponiveis VALUES (0, 'Pimentão Verde', 8.99);
+INSERT INTO legumes_disponiveis VALUES (0, 'Repolho', 1.50);
+SELECT * FROM legumes_disponiveis;
+
+
