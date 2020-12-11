@@ -1,0 +1,25 @@
+
+-- Banco de dados simples feito focado nas linguagens de programação mais utilizadas.
+
+-- Criação do banco de dados.
+DROP DATABASE IF EXISTS linguagens;
+CREATE DATABASE linguagens;
+USE linguagens;
+SHOW DATABASES;
+
+-- Criação da tabela principal.
+CREATE TABLE linguagens_programação (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	linguagem VARCHAR (30),
+	lançamento INT (4)
+);
+
+-- Inserindo valores na tabela.
+INSERT INTO linguagens_programação VALUES (0, 'Python', 1991);
+INSERT INTO linguagens_programação VALUES (0, 'Java', 1995);
+INSERT INTO linguagens_programação VALUES (0, 'PHP', 1995);
+INSERT INTO linguagens_programação VALUES (0, 'JavaScript', 1996);
+INSERT INTO linguagens_programação VALUES (0, 'Swift', 2014);
+SELECT * FROM linguagens_programação;
+
+
